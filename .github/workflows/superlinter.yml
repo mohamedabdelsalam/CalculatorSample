@@ -23,7 +23,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FILTER_REGEX_EXCLUDE: "*.md|.*src/test.*"
+          FILTER_REGEX_EXCLUDE: ".*test/.*"
       - name: Build and Run Tests
         run: mvn test "-Dmaven.test.failure.ignore=true"
       - name: Publish Test Report
