@@ -38,7 +38,11 @@ jobs:
         with:
           files: "test-results/**/*.xml"
           
-      - name: Code coverage report
-        uses: romeovs/lcov-reporter-action@v0.2.16
+      - name: Add coverage to PR
+        id: jacoco
+        uses: madrapps/jacoco-report@v1.2
         with:
-          lcov-file: ./coverage/lcov.info
+          paths: ${{ github.workspace }}/target/site/jacoco/jacoco.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          min-coverage-overall: 40
+          min-coverage-changed-files: 60
