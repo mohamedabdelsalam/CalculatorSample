@@ -1,14 +1,19 @@
+package test.java.com.example;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import main.java.com.example.Calculator;
+
 
 class CalculatorTest {
 
 	@Test
 	void testName() {
 		Calculator calculator = new Calculator(null);
-		Assertions.assertEquals("Standard", calculator.name, "Wrong result");			
+		Assertions.assertEquals("Standard", calculator.toString(), "Wrong result");			
 	}
 	
 	@Test
@@ -39,7 +44,7 @@ class CalculatorTest {
 	@Test
 	void testPositiveNumbers2() {
 		Calculator calculator = new Calculator(null);
-		Assertions.assertEquals("Standard", calculator.name, "Wrong result");			
+		Assertions.assertEquals("Standard", calculator.toString(), "Wrong result");			
 	}
 	
 }
