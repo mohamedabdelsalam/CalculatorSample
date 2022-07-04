@@ -40,6 +40,16 @@ public class Calculator {
     }
 
     /**
+     * This is java documentation for subtraction.
+     * @param x
+     * @param y
+     * @return the subtraction.
+     */
+    public int subtract(final int x, final int y) {
+        return x - y;
+    }
+
+    /**
      * This is java doc.
      */
     @Override

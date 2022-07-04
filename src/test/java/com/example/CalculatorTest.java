@@ -47,4 +47,11 @@ class CalculatorTest {
 		Assertions.assertEquals("Standard", calculator.toString(), "Wrong result");			
 	}
 	
+	@Test
+	void testSubtract() {
+        Calculator calculator = new Calculator(null);
+        int result = calculator.subtract(5, 4);
+        Assertions.assertEquals(result, 1);    
+	}
+	
 }
