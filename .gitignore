@@ -35,3 +35,7 @@ hs_err_pid*
 
 .DS_Store
 src/main/java/.DS_Store
+.idea/vcs.xml
+.idea/misc.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
